@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renad Hassan - Portfolio</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="./script.js" defer></script> <!-- Ensure the script is loaded correctly -->
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Renad Hassan
+        <div class="contact_info">
+          <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+          renadhassan187@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+          +0552610712
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+      </div>
+    </div>    
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+    </div>
+    <div>
+      <h1>
+        Hi, I'm Renad Hassan! <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving Hand"/>
+      </h1>
+      <p>
+        I am a data scientist with a passion for uncovering insights and building data-driven solutions. With a strong background in data engineering and analytics, I excel at transforming raw data into actionable intelligence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png" alt="Data Engineering"/>
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>  
+      <div class="skill">
+        <img src="html_finalprojimages/java.png" alt="Java"/>
+        <h6>Java</h6>
+        <p>3 years experience</p>
+      </div>  
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg" alt="Python"/>
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="html_finalprojimages/CSS3.png" alt="Java"/>
+        <h6>CSS3</h6>
+        <p>3 years experience</p>
+    </div>
+    <div class="skill">
+      <img src="html_finalprojimages/node.png" alt="Java"/>
+      <h6>node</h6>
+      <p>3 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="html_finalprojimages/home.png" alt="Java"/>
+        <h6>Data Analytics</h6>
+        <p>3 years experience</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div style="clear:both;"></div>
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Customer Segmentation</h3>
+        <ul>
+          <li>Developed a customer segmentation model using clustering techniques to enhance targeted marketing strategies for a retail client.</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Real-Time Analytics Dashboard</h3>
+        <ul>
+          <li>Built a real-time analytics dashboard for monitoring key performance indicators using Python and Dash.</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Predictive Maintenance</h3>
+        <ul>
+          <li>Implemented a predictive maintenance solution for manufacturing equipment using machine learning algorithms to minimize downtime.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div style="clear:both;"></div>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Renad is an exceptional data scientist who brings innovative solutions to complex problems. Her analytical skills are top-notch and she is a pleasure to work with.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Working with Renad has been a transformative experience. Her expertise in data analytics has significantly improved our decision-making process.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Renad's ability to turn data into actionable insights is unparalleled. She is a dedicated professional and a true asset to any team.
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>          
+        <input type="text" placeholder="Name (Optional)"/> <br/>
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn">Submit</button> <!-- No onclick inline, add in script.js -->
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="popup" id="popup">
+    <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark"/>
+    <h3>Recommendation submitted successfully!</h3> <!-- Add appropriate text here -->
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+</html>

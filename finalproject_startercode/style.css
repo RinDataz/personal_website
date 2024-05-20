@@ -1,0 +1,107 @@
+body {
+  background-color: #540f89ba; /* Light gray background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align-last: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Style for the profile name and contact info */
+.profile_name {
+  display: flex;
+  align-items: center;
+}
+
+.profile_name img {
+  width: 20px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 5px; /* Add some spacing between the image and text */
+}
+
+/* Style for the contact info */
+.contact_info {
+  margin-right: 10px; /* Add some spacing between contact info items */
+}
+
+/* Adjust the size of the profile image */
+.profile_image img {
+  width: 150px; /* Adjust the size as needed */
+  height: auto;
+}
+
+
+.topmenu:hover {
+  color: #ffe1e1d7; /* White */
+  font-weight: bold; /* Bolder */
+  text-decoration: underline;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.skill {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  background-color: #fffefe; /* Light gray background */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(239, 234, 234, 0.1); /* Soft shadow */
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+}
+
+.project-card {
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(248, 248, 248, 0.1); /* Soft shadow */
+}
+
+.recommendation {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 5px solid #ffffff; /* Light gray */
+  background-color: #ffffff; /* Lighter gray background */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff; /* White background */
+  padding: 20px;
+  border: 1px solid #cccccc; /* Light gray border */
+  z-index: 1000;
+  text-align: center;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(255, 244, 244, 0.1); /* Soft shadow */
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
